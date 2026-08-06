@@ -31,7 +31,7 @@ jobs:
           version: 11
 
       # Matches the version the deploy image builds on (provisioning/Dockerfile).
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 24.18.0
           cache: pnpm
