@@ -1,0 +1,2712 @@
+{
+ "dungeon": [
+  {
+   "zone": "Casos-Aiagsum",
+   "at": [
+    231,
+    292
+   ]
+  },
+  {
+   "zone": "Casos-Ayosrom",
+   "at": [
+    184,
+    294
+   ]
+  },
+  {
+   "zone": "Cebitos-Aeaylum",
+   "at": [
+    328,
+    504
+   ]
+  },
+  {
+   "zone": "Cetitos-Aiayrom",
+   "at": [
+    274,
+    269
+   ]
+  },
+  {
+   "zone": "Cieitos-Obaelos",
+   "at": [
+    451,
+    271
+   ]
+  },
+  {
+   "zone": "Cilos-Avioaum",
+   "at": [
+    294,
+    252
+   ]
+  },
+  {
+   "zone": "Curites-Exakrom",
+   "at": [
+    215,
+    351
+   ]
+  },
+  {
+   "zone": "Ferites-Ohohtum",
+   "at": [
+    279,
+    401
+   ]
+  },
+  {
+   "zone": "Feritos-Osinsum",
+   "at": [
+    228,
+    358
+   ]
+  },
+  {
+   "zone": "Fonos-Aiugsum",
+   "at": [
+    257,
+    397
+   ]
+  },
+  {
+   "zone": "Hasos-Inayaum",
+   "at": [
+    344,
+    456
+   ]
+  },
+  {
+   "zone": "Hilitos-Osuorom",
+   "at": [
+    188,
+    262
+   ]
+  },
+  {
+   "zone": "Huritos-Oiaelos",
+   "at": [
+    529,
+    388
+   ]
+  },
+  {
+   "zone": "Hynitos-Atoyam",
+   "at": [
+    356,
+    254
+   ]
+  },
+  {
+   "zone": "Oieos-Umiutum",
+   "at": [
+    447,
+    375
+   ]
+  },
+  {
+   "zone": "Ouritos-Ofailos",
+   "at": [
+    309,
+    395
+   ]
+  },
+  {
+   "zone": "Ponitos-Aiayrom",
+   "at": [
+    232,
+    411
+   ]
+  },
+  {
+   "zone": "Setitos-Obobrom",
+   "at": [
+    354,
+    184
+   ]
+  },
+  {
+   "zone": "Suyitos-Ofugtum",
+   "at": [
+    543,
+    290
+   ]
+  },
+  {
+   "zone": "Synitos-Ososlos",
+   "at": [
+    538,
+    323
+   ]
+  },
+  {
+   "zone": "Synos-Oyarlos",
+   "at": [
+    353,
+    204
+   ]
+  },
+  {
+   "zone": "Xebos-Emimsum",
+   "at": [
+    471,
+    275
+   ]
+  },
+  {
+   "zone": "Xilos-Osayam",
+   "at": [
+    335,
+    449
+   ]
+  },
+  {
+   "zone": "Xouitos-Aeoilos",
+   "at": [
+    184,
+    260
+   ]
+  }
+ ],
+ "fibre": [
+  {
+   "zone": "Cebos-Avemlum",
+   "at": [
+    480,
+    279
+   ]
+  },
+  {
+   "zone": "Firitos-Alodrom",
+   "at": [
+    500,
+    232
+   ]
+  },
+  {
+   "zone": "Fonos-Aiugsum",
+   "at": [
+    539,
+    268
+   ]
+  },
+  {
+   "zone": "Fynes-Unavtum",
+   "at": [
+    416,
+    300
+   ]
+  },
+  {
+   "zone": "Fynitos-Aiugsum",
+   "at": [
+    521,
+    265
+   ]
+  },
+  {
+   "zone": "Hasitos-Umayaum",
+   "at": [
+    556,
+    254
+   ]
+  },
+  {
+   "zone": "Hasos-Ayousum",
+   "at": [
+    545,
+    322
+   ]
+  },
+  {
+   "zone": "Hilitos-Osuorom",
+   "at": [
+    317,
+    187
+   ]
+  },
+  {
+   "zone": "Huyes-Ogozlum",
+   "at": [
+    545,
+    321
+   ]
+  },
+  {
+   "zone": "Oasos-Uromlum",
+   "at": [
+    368,
+    348
+   ]
+  },
+  {
+   "zone": "Oebitos-Eraerom",
+   "at": [
+    380,
+    389
+   ]
+  },
+  {
+   "zone": "Pilitos-Eterrom",
+   "at": [
+    495,
+    219
+   ]
+  },
+  {
+   "zone": "Sases-Avuotum",
+   "at": [
+    325,
+    431
+   ]
+  },
+  {
+   "zone": "Sebos-Oyohun",
+   "at": [
+    410,
+    420
+   ]
+  },
+  {
+   "zone": "Seritos-Onaytum",
+   "at": [
+    444,
+    417
+   ]
+  },
+  {
+   "zone": "Settun-Al-Odetum",
+   "at": [
+    282,
+    275
+   ]
+  },
+  {
+   "zone": "Settun-In-Odetum",
+   "at": [
+    281,
+    244
+   ]
+  },
+  {
+   "zone": "Settun-Odetum",
+   "at": [
+    417,
+    327
+   ]
+  },
+  {
+   "zone": "Siritos-Avoirom",
+   "at": [
+    231,
+    334
+   ]
+  },
+  {
+   "zone": "Souos-Availos",
+   "at": [
+    232,
+    335
+   ]
+  },
+  {
+   "zone": "Suyos-Onaytum",
+   "at": [
+    427,
+    419
+   ]
+  },
+  {
+   "zone": "Synites-Aoarsum",
+   "at": [
+    159,
+    374
+   ]
+  },
+  {
+   "zone": "Xebos-Exostum",
+   "at": [
+    487,
+    223
+   ]
+  },
+  {
+   "zone": "Xoritos-Exostum",
+   "at": [
+    508,
+    212
+   ]
+  }
+ ],
+ "hideout": [
+  {
+   "zone": "Qiient-Al-Qinsis",
+   "at": [
+    402,
+    188
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Tersas",
+   "at": [
+    727,
+    755
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Vynsis",
+   "at": [
+    314,
+    239
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Vynsis",
+   "at": [
+    375,
+    180
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Vynsis",
+   "at": [
+    505,
+    269
+   ]
+  },
+  {
+   "zone": "Qiient-Et-Tertum",
+   "at": [
+    761,
+    567
+   ]
+  },
+  {
+   "zone": "Qiient-Qi-Odesas",
+   "at": [
+    282,
+    204
+   ]
+  },
+  {
+   "zone": "Qiient-Qi-Odesas",
+   "at": [
+    359,
+    201
+   ]
+  },
+  {
+   "zone": "Qiient-Qi-Odesas",
+   "at": [
+    535,
+    327
+   ]
+  },
+  {
+   "zone": "Qiient-Sa-Odetis",
+   "at": [
+    173,
+    297
+   ]
+  },
+  {
+   "zone": "Qiient-Sa-Odetis",
+   "at": [
+    343,
+    293
+   ]
+  },
+  {
+   "zone": "Qiient-Sa-Odetis",
+   "at": [
+    402,
+    399
+   ]
+  },
+  {
+   "zone": "Qiient-Tersom",
+   "at": [
+    285,
+    203
+   ]
+  },
+  {
+   "zone": "Qiitun-Et-Vietis",
+   "at": [
+    228,
+    319
+   ]
+  },
+  {
+   "zone": "Qiitun-Et-Vietis",
+   "at": [
+    276,
+    278
+   ]
+  },
+  {
+   "zone": "Qiitun-Et-Vietis",
+   "at": [
+    536,
+    317
+   ]
+  },
+  {
+   "zone": "Qiitun-Si-Vynsom",
+   "at": [
+    815,
+    427
+   ]
+  },
+  {
+   "zone": "Quaent-Al-Viesom",
+   "at": [
+    554,
+    307
+   ]
+  },
+  {
+   "zone": "Quaent-Al-Vynsum",
+   "at": [
+    346,
+    349
+   ]
+  },
+  {
+   "zone": "Quaent-In-Odesum",
+   "at": [
+    489,
+    210
+   ]
+  },
+  {
+   "zone": "Quaent-Qintis",
+   "at": [
+    518,
+    301
+   ]
+  },
+  {
+   "zone": "Quaent-Tersis",
+   "at": [
+    360,
+    197
+   ]
+  },
+  {
+   "zone": "Quantun-Et-Nusas",
+   "at": [
+    786,
+    696
+   ]
+  },
+  {
+   "zone": "Quatun-Odetum",
+   "at": [
+    351,
+    308
+   ]
+  },
+  {
+   "zone": "Secent-AI-Odetis",
+   "at": [
+    319,
+    206
+   ]
+  },
+  {
+   "zone": "Secent-Al-Duosom",
+   "at": [
+    439,
+    389
+   ]
+  },
+  {
+   "zone": "Secent-Et-Odesis",
+   "at": [
+    320,
+    263
+   ]
+  },
+  {
+   "zone": "Secent-Et-Vyntum",
+   "at": [
+    444,
+    312
+   ]
+  },
+  {
+   "zone": "Secent-Et-Vyntum",
+   "at": [
+    497,
+    277
+   ]
+  },
+  {
+   "zone": "Secent-Nutum",
+   "at": [
+    390,
+    307
+   ]
+  },
+  {
+   "zone": "Secent-Qi-Qinsom",
+   "at": [
+    277,
+    202
+   ]
+  },
+  {
+   "zone": "Secent-Vyntum",
+   "at": [
+    311,
+    322
+   ]
+  },
+  {
+   "zone": "Sectun-In-Odesis",
+   "at": [
+    301,
+    320
+   ]
+  },
+  {
+   "zone": "Sectun-Qinsom",
+   "at": [
+    332,
+    329
+   ]
+  },
+  {
+   "zone": "Sectun-Tersas",
+   "at": [
+    407,
+    342
+   ]
+  },
+  {
+   "zone": "Setent-Al-Vietis",
+   "at": [
+    248,
+    313
+   ]
+  },
+  {
+   "zone": "Setent-Al-Vietis",
+   "at": [
+    319,
+    393
+   ]
+  },
+  {
+   "zone": "Setent-Et-Nusum",
+   "at": [
+    394,
+    309
+   ]
+  },
+  {
+   "zone": "Setent-Et-Qintis",
+   "at": [
+    414,
+    205
+   ]
+  },
+  {
+   "zone": "Setent-Nusum",
+   "at": [
+    346,
+    221
+   ]
+  },
+  {
+   "zone": "Setent-Qintis",
+   "at": [
+    359,
+    356
+   ]
+  },
+  {
+   "zone": "Setent-Qintis",
+   "at": [
+    409,
+    397
+   ]
+  },
+  {
+   "zone": "Setent-Vietis",
+   "at": [
+    343,
+    318
+   ]
+  },
+  {
+   "zone": "Setent-Vietis",
+   "at": [
+    397,
+    282
+   ]
+  },
+  {
+   "zone": "Settun-Al-Odetum",
+   "at": [
+    337,
+    287
+   ]
+  },
+  {
+   "zone": "Settun-In-Odetum",
+   "at": [
+    336,
+    253
+   ]
+  },
+  {
+   "zone": "Settun-In-Odetum",
+   "at": [
+    358,
+    355
+   ]
+  },
+  {
+   "zone": "Settun-Tersom",
+   "at": [
+    205,
+    304
+   ]
+  }
+ ],
+ "leather": [
+  {
+   "zone": "Casos-Aiagsum",
+   "at": [
+    429,
+    317
+   ]
+  },
+  {
+   "zone": "Cieites-Ugumlos",
+   "at": [
+    498,
+    248
+   ]
+  },
+  {
+   "zone": "Fasitos-Oleraum",
+   "at": [
+    323,
+    285
+   ]
+  },
+  {
+   "zone": "Feritos-Enomaum",
+   "at": [
+    406,
+    422
+   ]
+  },
+  {
+   "zone": "Fouitos-Aiattum",
+   "at": [
+    299,
+    404
+   ]
+  },
+  {
+   "zone": "Hetitos-Iuaerom",
+   "at": [
+    416,
+    171
+   ]
+  },
+  {
+   "zone": "Hilites-Ugumtum",
+   "at": [
+    317,
+    251
+   ]
+  },
+  {
+   "zone": "Hiros-Exozlos",
+   "at": [
+    275,
+    241
+   ]
+  },
+  {
+   "zone": "Hynes-Ieatun",
+   "at": [
+    217,
+    368
+   ]
+  },
+  {
+   "zone": "Hynites-Ogozlum",
+   "at": [
+    457,
+    187
+   ]
+  },
+  {
+   "zone": "Oires-Oloblum",
+   "at": [
+    313,
+    392
+   ]
+  },
+  {
+   "zone": "Pieos-Eterrom",
+   "at": [
+    566,
+    270
+   ]
+  },
+  {
+   "zone": "Poros-Oconun",
+   "at": [
+    312,
+    344
+   ]
+  },
+  {
+   "zone": "Qiient-Et-Nusas",
+   "at": [
+    283,
+    398
+   ]
+  },
+  {
+   "zone": "Sectun-in-Vyntis",
+   "at": [
+    386,
+    356
+   ]
+  },
+  {
+   "zone": "Soritos-Avamsum",
+   "at": [
+    219,
+    345
+   ]
+  },
+  {
+   "zone": "Tasitos-Ulaurom",
+   "at": [
+    452,
+    310
+   ]
+  },
+  {
+   "zone": "Tetos-Ulaurom",
+   "at": [
+    462,
+    308
+   ]
+  },
+  {
+   "zone": "Tieitos-Ouultum",
+   "at": [
+    452,
+    225
+   ]
+  },
+  {
+   "zone": "Tilitos-Ataglos",
+   "at": [
+    276,
+    337
+   ]
+  },
+  {
+   "zone": "Xasos-Aoemaum",
+   "at": [
+    678,
+    995
+   ]
+  },
+  {
+   "zone": "Xasos-Oneulum",
+   "at": [
+    358,
+    243
+   ]
+  },
+  {
+   "zone": "Xerites-Oxoulum",
+   "at": [
+    488,
+    411
+   ]
+  },
+  {
+   "zone": "Xuros-Eyoztum",
+   "at": [
+    395,
+    362
+   ]
+  }
+ ],
+ "ore": [
+  {
+   "zone": "Ceres-Iooinum",
+   "at": [
+    514,
+    358
+   ]
+  },
+  {
+   "zone": "Ceros-Aeaylum",
+   "at": [
+    361,
+    235
+   ]
+  },
+  {
+   "zone": "Fasites-Azazsum",
+   "at": [
+    147,
+    184
+   ]
+  },
+  {
+   "zone": "Fasites-Azazsum",
+   "at": [
+    185,
+    286
+   ]
+  },
+  {
+   "zone": "Feritos-Enomaum",
+   "at": [
+    188,
+    343
+   ]
+  },
+  {
+   "zone": "Fieos-Aiuttum",
+   "at": [
+    388,
+    366
+   ]
+  },
+  {
+   "zone": "Firos-Enomaum",
+   "at": [
+    202,
+    358
+   ]
+  },
+  {
+   "zone": "Furitos-Aiavam",
+   "at": [
+    390,
+    418
+   ]
+  },
+  {
+   "zone": "Hebites-Exemrom",
+   "at": [
+    401,
+    256
+   ]
+  },
+  {
+   "zone": "Oebitos-Oyozam",
+   "at": [
+    488,
+    225
+   ]
+  },
+  {
+   "zone": "Oieitos-Ixakaum",
+   "at": [
+    380,
+    297
+   ]
+  },
+  {
+   "zone": "Ooros-Ecunsum",
+   "at": [
+    390,
+    342
+   ]
+  },
+  {
+   "zone": "Ooros-Ecunsum",
+   "at": [
+    475,
+    176
+   ]
+  },
+  {
+   "zone": "Oynos-Oyozam",
+   "at": [
+    311,
+    332
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Tersas",
+   "at": [
+    427,
+    841
+   ]
+  },
+  {
+   "zone": "Quaent-Al-Viesom",
+   "at": [
+    284,
+    333
+   ]
+  },
+  {
+   "zone": "Quaent-Al-Viesom",
+   "at": [
+    529,
+    275
+   ]
+  },
+  {
+   "zone": "Quaent-Tersis",
+   "at": [
+    428,
+    228
+   ]
+  },
+  {
+   "zone": "Secent-Nutum",
+   "at": [
+    290,
+    328
+   ]
+  },
+  {
+   "zone": "Sectun-Tersas",
+   "at": [
+    546,
+    300
+   ]
+  },
+  {
+   "zone": "Silitos-Abizaum",
+   "at": [
+    307,
+    319
+   ]
+  },
+  {
+   "zone": "Tetos-Ulaurom",
+   "at": [
+    389,
+    190
+   ]
+  },
+  {
+   "zone": "Touos-Uoemtum",
+   "at": [
+    525,
+    309
+   ]
+  },
+  {
+   "zone": "Xasos-Aoemaum",
+   "at": [
+    418,
+    762
+   ]
+  }
+ ],
+ "portal": [
+  {
+   "zone": "Casos-Uruxtum",
+   "at": [
+    175,
+    293
+   ]
+  },
+  {
+   "zone": "Cebos-Avemlum",
+   "at": [
+    278,
+    228
+   ]
+  },
+  {
+   "zone": "Ceros-Aeaylum",
+   "at": [
+    394,
+    192
+   ]
+  },
+  {
+   "zone": "Cilos-Avioaum",
+   "at": [
+    429,
+    195
+   ]
+  },
+  {
+   "zone": "Conos-Avaelum",
+   "at": [
+    381,
+    370
+   ]
+  },
+  {
+   "zone": "Conos-Avaelum",
+   "at": [
+    396,
+    200
+   ]
+  },
+  {
+   "zone": "Couos-Opodam",
+   "at": [
+    391,
+    178
+   ]
+  },
+  {
+   "zone": "Cynitos-Aiagsum",
+   "at": [
+    368,
+    366
+   ]
+  },
+  {
+   "zone": "Febites-Opavun",
+   "at": [
+    391,
+    462
+   ]
+  },
+  {
+   "zone": "Files-Azazsum",
+   "at": [
+    189,
+    355
+   ]
+  },
+  {
+   "zone": "Filites-Izohun",
+   "at": [
+    190,
+    325
+   ]
+  },
+  {
+   "zone": "Firos-Ezatam",
+   "at": [
+    283,
+    253
+   ]
+  },
+  {
+   "zone": "Foros-Uzazlum",
+   "at": [
+    253,
+    394
+   ]
+  },
+  {
+   "zone": "Fynites-Aeaosum",
+   "at": [
+    353,
+    205
+   ]
+  },
+  {
+   "zone": "Hasos-Ayousum",
+   "at": [
+    325,
+    415
+   ]
+  },
+  {
+   "zone": "Hasos-Inayaum",
+   "at": [
+    208,
+    307
+   ]
+  },
+  {
+   "zone": "Hebitos-Atontum",
+   "at": [
+    214,
+    315
+   ]
+  },
+  {
+   "zone": "Hiros-Exozlos",
+   "at": [
+    212,
+    367
+   ]
+  },
+  {
+   "zone": "Huros-Atontum",
+   "at": [
+    211,
+    307
+   ]
+  },
+  {
+   "zone": "Huyes-Ogozlum",
+   "at": [
+    192,
+    293
+   ]
+  },
+  {
+   "zone": "Hynitos-Ulamsum",
+   "at": [
+    331,
+    430
+   ]
+  },
+  {
+   "zone": "Oieitos-Ixakaum",
+   "at": [
+    185,
+    326
+   ]
+  },
+  {
+   "zone": "Oiros-Alaiam",
+   "at": [
+    215,
+    344
+   ]
+  },
+  {
+   "zone": "Ouritos-Ofailos",
+   "at": [
+    320,
+    186
+   ]
+  },
+  {
+   "zone": "Peritos-Oconun",
+   "at": [
+    282,
+    223
+   ]
+  },
+  {
+   "zone": "Peros-Aiataum",
+   "at": [
+    378,
+    179
+   ]
+  },
+  {
+   "zone": "Pirites-Unatam",
+   "at": [
+    354,
+    168
+   ]
+  },
+  {
+   "zone": "Piritos-Ofavam",
+   "at": [
+    261,
+    396
+   ]
+  },
+  {
+   "zone": "Ponitos-Aiayrom",
+   "at": [
+    194,
+    324
+   ]
+  },
+  {
+   "zone": "Pouitos-Ofairom",
+   "at": [
+    235,
+    385
+   ]
+  },
+  {
+   "zone": "Pures-Ouozlum",
+   "at": [
+    183,
+    320
+   ]
+  },
+  {
+   "zone": "Qiitun-Duosum",
+   "at": [
+    492,
+    411
+   ]
+  },
+  {
+   "zone": "Quaent-Al-Viesom",
+   "at": [
+    482,
+    356
+   ]
+  },
+  {
+   "zone": "Sebos-Ugersum",
+   "at": [
+    382,
+    241
+   ]
+  },
+  {
+   "zone": "Secent-Et-Vyntum",
+   "at": [
+    250,
+    333
+   ]
+  },
+  {
+   "zone": "Sectun-Qinsom",
+   "at": [
+    437,
+    221
+   ]
+  },
+  {
+   "zone": "Setent-Et-Qintis",
+   "at": [
+    479,
+    240
+   ]
+  },
+  {
+   "zone": "Siritos-Oyohun",
+   "at": [
+    227,
+    283
+   ]
+  },
+  {
+   "zone": "Soritos-Avamsum",
+   "at": [
+    272,
+    234
+   ]
+  },
+  {
+   "zone": "Souitos-Oiozlum",
+   "at": [
+    350,
+    455
+   ]
+  },
+  {
+   "zone": "Suyites-Uzurtum",
+   "at": [
+    224,
+    307
+   ]
+  },
+  {
+   "zone": "Suyos-Onaytum",
+   "at": [
+    260,
+    382
+   ]
+  },
+  {
+   "zone": "Synitos-Ofurlos",
+   "at": [
+    384,
+    443
+   ]
+  },
+  {
+   "zone": "Tasitos-Obayam",
+   "at": [
+    510,
+    198
+   ]
+  },
+  {
+   "zone": "Tynos-Atatlos",
+   "at": [
+    238,
+    331
+   ]
+  },
+  {
+   "zone": "Xebitos-Oyogam",
+   "at": [
+    263,
+    218
+   ]
+  },
+  {
+   "zone": "Xebitos-Oyogam",
+   "at": [
+    269,
+    371
+   ]
+  },
+  {
+   "zone": "Xerites-Oxoulum",
+   "at": [
+    401,
+    292
+   ]
+  }
+ ],
+ "stone": [
+  {
+   "zone": "Conos-Avaelum",
+   "at": [
+    300,
+    356
+   ]
+  },
+  {
+   "zone": "Fiees-Ohohtum",
+   "at": [
+    472,
+    209
+   ]
+  },
+  {
+   "zone": "Fuyitos-Ayiotum",
+   "at": [
+    387,
+    320
+   ]
+  },
+  {
+   "zone": "Hebitos-Atontum",
+   "at": [
+    518,
+    356
+   ]
+  },
+  {
+   "zone": "Hiles-Izizaum",
+   "at": [
+    201,
+    234
+   ]
+  },
+  {
+   "zone": "Hilites-Ugumtum",
+   "at": [
+    435,
+    311
+   ]
+  },
+  {
+   "zone": "Hynitos-Ulamsum",
+   "at": [
+    460,
+    197
+   ]
+  },
+  {
+   "zone": "Oebitos-Oyozam",
+   "at": [
+    272,
+    408
+   ]
+  },
+  {
+   "zone": "Oieos-Umiutum",
+   "at": [
+    444,
+    300
+   ]
+  },
+  {
+   "zone": "Oonitos-Umiutum",
+   "at": [
+    467,
+    328
+   ]
+  },
+  {
+   "zone": "Pieos-Eterrom",
+   "at": [
+    310,
+    222
+   ]
+  },
+  {
+   "zone": "Pures-Ouozlum",
+   "at": [
+    499,
+    207
+   ]
+  },
+  {
+   "zone": "Puyitos-Aiataum",
+   "at": [
+    322,
+    390
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Qinsis",
+   "at": [
+    322,
+    283
+   ]
+  },
+  {
+   "zone": "Sectun-Qinsom",
+   "at": [
+    344,
+    384
+   ]
+  },
+  {
+   "zone": "Setent-Nusum",
+   "at": [
+    451,
+    274
+   ]
+  },
+  {
+   "zone": "Soritos-Apenlum",
+   "at": [
+    205,
+    268
+   ]
+  },
+  {
+   "zone": "Suyitos-Ofugtum",
+   "at": [
+    302,
+    209
+   ]
+  },
+  {
+   "zone": "Suyitos-Oyarlos",
+   "at": [
+    502,
+    370
+   ]
+  },
+  {
+   "zone": "Tasos-Iriglos",
+   "at": [
+    446,
+    411
+   ]
+  },
+  {
+   "zone": "Teros-Auiusum",
+   "at": [
+    366,
+    446
+   ]
+  },
+  {
+   "zone": "Touos-Uoemtum",
+   "at": [
+    354,
+    424
+   ]
+  },
+  {
+   "zone": "Xebos-Emimsum",
+   "at": [
+    388,
+    419
+   ]
+  },
+  {
+   "zone": "Xynos-Oyogam",
+   "at": [
+    475,
+    309
+   ]
+  }
+ ],
+ "treasuresBlue": [
+  {
+   "zone": "Cieites-Ugumlos",
+   "at": [
+    389,
+    278
+   ]
+  },
+  {
+   "zone": "Cieitos-Obaelos",
+   "at": [
+    502,
+    351
+   ]
+  },
+  {
+   "zone": "Cilitos-Opodam",
+   "at": [
+    252,
+    289
+   ]
+  },
+  {
+   "zone": "Cilos-Ofailos",
+   "at": [
+    501,
+    335
+   ]
+  },
+  {
+   "zone": "Conitos-Ofailos",
+   "at": [
+    496,
+    332
+   ]
+  },
+  {
+   "zone": "Conitos-Oxaeaum",
+   "at": [
+    440,
+    273
+   ]
+  },
+  {
+   "zone": "Conitos-Uruxtum",
+   "at": [
+    415,
+    235
+   ]
+  },
+  {
+   "zone": "Coritos-Avemlum",
+   "at": [
+    341,
+    283
+   ]
+  },
+  {
+   "zone": "Cuyites-Iooinum",
+   "at": [
+    288,
+    326
+   ]
+  },
+  {
+   "zone": "Cynos-Oxaeaum",
+   "at": [
+    501,
+    331
+   ]
+  },
+  {
+   "zone": "Feritos-Enomaum",
+   "at": [
+    300,
+    298
+   ]
+  },
+  {
+   "zone": "Feritos-Enomaum",
+   "at": [
+    390,
+    358
+   ]
+  },
+  {
+   "zone": "Fieos-Atezsum",
+   "at": [
+    535,
+    540
+   ]
+  },
+  {
+   "zone": "Foritos-Aiaylos",
+   "at": [
+    364,
+    290
+   ]
+  },
+  {
+   "zone": "Foros-Egoisum",
+   "at": [
+    367,
+    296
+   ]
+  },
+  {
+   "zone": "Foues-Aeaosum",
+   "at": [
+    284,
+    403
+   ]
+  },
+  {
+   "zone": "Furitos-Aiavam",
+   "at": [
+    252,
+    251
+   ]
+  },
+  {
+   "zone": "Fynes-Unavtum",
+   "at": [
+    265,
+    379
+   ]
+  },
+  {
+   "zone": "Fynites-Aeaosum",
+   "at": [
+    280,
+    406
+   ]
+  },
+  {
+   "zone": "Hebes-Ouaylos",
+   "at": [
+    298,
+    217
+   ]
+  },
+  {
+   "zone": "Huyos-Eyoztum",
+   "at": [
+    452,
+    285
+   ]
+  },
+  {
+   "zone": "Hynes-Exemrom",
+   "at": [
+    515,
+    259
+   ]
+  },
+  {
+   "zone": "Peros-Aiataum",
+   "at": [
+    424,
+    383
+   ]
+  },
+  {
+   "zone": "Pynites-Ouozlum",
+   "at": [
+    330,
+    330
+   ]
+  },
+  {
+   "zone": "Pynitos-Aietam",
+   "at": [
+    371,
+    473
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Vynsis",
+   "at": [
+    412,
+    279
+   ]
+  },
+  {
+   "zone": "Qiitun-Al-Duosum",
+   "at": [
+    661,
+    612
+   ]
+  },
+  {
+   "zone": "Qiitun-Al-Duosum",
+   "at": [
+    818,
+    748
+   ]
+  },
+  {
+   "zone": "Qiitun-Duosum",
+   "at": [
+    344,
+    298
+   ]
+  },
+  {
+   "zone": "Qiitun-Duosum",
+   "at": [
+    422,
+    365
+   ]
+  },
+  {
+   "zone": "Quaent-Tersis",
+   "at": [
+    329,
+    260
+   ]
+  },
+  {
+   "zone": "Quatun-Odetum",
+   "at": [
+    421,
+    354
+   ]
+  },
+  {
+   "zone": "Seritos-Onaytum",
+   "at": [
+    485,
+    362
+   ]
+  },
+  {
+   "zone": "Setent-Nusum",
+   "at": [
+    450,
+    178
+   ]
+  },
+  {
+   "zone": "Setent-Vietis",
+   "at": [
+    325,
+    252
+   ]
+  },
+  {
+   "zone": "Settun-AL-Nusis",
+   "at": [
+    418,
+    338
+   ]
+  },
+  {
+   "zone": "Settun-Al-Odetum",
+   "at": [
+    328,
+    342
+   ]
+  },
+  {
+   "zone": "Settun-In-Odetum",
+   "at": [
+    514,
+    196
+   ]
+  },
+  {
+   "zone": "Souos-Availos",
+   "at": [
+    419,
+    359
+   ]
+  },
+  {
+   "zone": "Souos-Ososlos",
+   "at": [
+    469,
+    255
+   ]
+  },
+  {
+   "zone": "Tilitos-Ataglos",
+   "at": [
+    456,
+    268
+   ]
+  },
+  {
+   "zone": "Tuyitos-Auiusum",
+   "at": [
+    492,
+    389
+   ]
+  },
+  {
+   "zone": "Tynos-Atatlos",
+   "at": [
+    509,
+    377
+   ]
+  },
+  {
+   "zone": "Xasos-Aeoilos",
+   "at": [
+    376,
+    427
+   ]
+  },
+  {
+   "zone": "Xasos-Aeoilos",
+   "at": [
+    560,
+    317
+   ]
+  },
+  {
+   "zone": "Xebitos-Oyogam",
+   "at": [
+    560,
+    317
+   ]
+  },
+  {
+   "zone": "Xouitos-Aeoilos",
+   "at": [
+    353,
+    178
+   ]
+  },
+  {
+   "zone": "Xynos-Oyogam",
+   "at": [
+    562,
+    316
+   ]
+  }
+ ],
+ "treasuresGreen": [
+  {
+   "zone": "Cases-Ugumlos",
+   "at": [
+    552,
+    301
+   ]
+  },
+  {
+   "zone": "Ceros-Aeaylum",
+   "at": [
+    450,
+    376
+   ]
+  },
+  {
+   "zone": "Cilitos-Opodam",
+   "at": [
+    374,
+    259
+   ]
+  },
+  {
+   "zone": "Cynos-Oxaeaum",
+   "at": [
+    375,
+    361
+   ]
+  },
+  {
+   "zone": "Fasitos-Atezsum",
+   "at": [
+    419,
+    435
+   ]
+  },
+  {
+   "zone": "Febites-Opavun",
+   "at": [
+    200,
+    330
+   ]
+  },
+  {
+   "zone": "Fouitos-Aiattum",
+   "at": [
+    406,
+    420
+   ]
+  },
+  {
+   "zone": "Hasos-Ayousum",
+   "at": [
+    307,
+    165
+   ]
+  },
+  {
+   "zone": "Hasos-Inayaum",
+   "at": [
+    330,
+    330
+   ]
+  },
+  {
+   "zone": "Hebes-Ouaylos",
+   "at": [
+    550,
+    367
+   ]
+  },
+  {
+   "zone": "Hebos-Ulamsum",
+   "at": [
+    455,
+    266
+   ]
+  },
+  {
+   "zone": "Heros-Atoyam",
+   "at": [
+    322,
+    187
+   ]
+  },
+  {
+   "zone": "Hurites-Ouaylos",
+   "at": [
+    224,
+    381
+   ]
+  },
+  {
+   "zone": "Huritos-Iuimaum",
+   "at": [
+    468,
+    221
+   ]
+  },
+  {
+   "zone": "Huros-Atontum",
+   "at": [
+    227,
+    384
+   ]
+  },
+  {
+   "zone": "Huyos-Eyoztum",
+   "at": [
+    325,
+    206
+   ]
+  },
+  {
+   "zone": "Hynes-Exemrom",
+   "at": [
+    325,
+    219
+   ]
+  },
+  {
+   "zone": "Hynes-Ieatun",
+   "at": [
+    509,
+    322
+   ]
+  },
+  {
+   "zone": "Hynites-Ogozlum",
+   "at": [
+    305,
+    166
+   ]
+  },
+  {
+   "zone": "Oiros-Alaiam",
+   "at": [
+    211,
+    239
+   ]
+  },
+  {
+   "zone": "Ooros-Ataltum",
+   "at": [
+    476,
+    418
+   ]
+  },
+  {
+   "zone": "Ouritos-Ofailos",
+   "at": [
+    399,
+    236
+   ]
+  },
+  {
+   "zone": "Petitos-Amayam",
+   "at": [
+    395,
+    375
+   ]
+  },
+  {
+   "zone": "Pynos-Opabrom",
+   "at": [
+    307,
+    185
+   ]
+  },
+  {
+   "zone": "Qiient-Al-Vynsis",
+   "at": [
+    435,
+    204
+   ]
+  },
+  {
+   "zone": "Qiient-Si-Odesum",
+   "at": [
+    304,
+    292
+   ]
+  },
+  {
+   "zone": "Qiient-Si-Odesum",
+   "at": [
+    332,
+    310
+   ]
+  },
+  {
+   "zone": "Qiient-Si-Tertum",
+   "at": [
+    350,
+    322
+   ]
+  },
+  {
+   "zone": "Quaent-In-Odesum",
+   "at": [
+    467,
+    267
+   ]
+  },
+  {
+   "zone": "Quaent-Tersis",
+   "at": [
+    351,
+    308
+   ]
+  },
+  {
+   "zone": "Quatun-Et-Nusas",
+   "at": [
+    254,
+    281
+   ]
+  },
+  {
+   "zone": "Sases-Avuotum",
+   "at": [
+    492,
+    241
+   ]
+  },
+  {
+   "zone": "Sases-Avuotum",
+   "at": [
+    545,
+    277
+   ]
+  },
+  {
+   "zone": "Sasos-Egeylos",
+   "at": [
+    348,
+    160
+   ]
+  },
+  {
+   "zone": "Sebos-Avoirom",
+   "at": [
+    318,
+    400
+   ]
+  },
+  {
+   "zone": "Secent-Nutum",
+   "at": [
+    264,
+    280
+   ]
+  },
+  {
+   "zone": "Secent-Odesom",
+   "at": [
+    480,
+    386
+   ]
+  },
+  {
+   "zone": "Secent-Vyntum",
+   "at": [
+    301,
+    364
+   ]
+  },
+  {
+   "zone": "Setent-Nusum",
+   "at": [
+    280,
+    297
+   ]
+  },
+  {
+   "zone": "Settun-AL-Nusis",
+   "at": [
+    360,
+    317
+   ]
+  },
+  {
+   "zone": "Settun-Al-Odetum",
+   "at": [
+    394,
+    342
+   ]
+  },
+  {
+   "zone": "Souos-Ososlos",
+   "at": [
+    233,
+    324
+   ]
+  },
+  {
+   "zone": "Synitos-Ososlos",
+   "at": [
+    339,
+    221
+   ]
+  },
+  {
+   "zone": "Tasos-Iriglos",
+   "at": [
+    325,
+    374
+   ]
+  },
+  {
+   "zone": "Tetos-Igaelum",
+   "at": [
+    248,
+    281
+   ]
+  },
+  {
+   "zone": "Tetos-Igaelum",
+   "at": [
+    281,
+    301
+   ]
+  },
+  {
+   "zone": "Tynos-Atatlos",
+   "at": [
+    574,
+    341
+   ]
+  },
+  {
+   "zone": "Xiles-Aiavlum",
+   "at": [
+    347,
+    174
+   ]
+  }
+ ],
+ "treasuresYellow": [
+  {
+   "zone": "Casitos-Alieam",
+   "at": [
+    438,
+    242
+   ]
+  },
+  {
+   "zone": "Cilos-Otatrom",
+   "at": [
+    367,
+    280
+   ]
+  },
+  {
+   "zone": "Coros-Atinaum",
+   "at": [
+    321,
+    226
+   ]
+  },
+  {
+   "zone": "Couos-Opodam",
+   "at": [
+    416,
+    289
+   ]
+  },
+  {
+   "zone": "Couos-Opodam",
+   "at": [
+    444,
+    366
+   ]
+  },
+  {
+   "zone": "Fasitos-Oleraum",
+   "at": [
+    489,
+    205
+   ]
+  },
+  {
+   "zone": "Fasitos-Oyuctum",
+   "at": [
+    461,
+    240
+   ]
+  },
+  {
+   "zone": "Feritos-Osinsum",
+   "at": [
+    467,
+    269
+   ]
+  },
+  {
+   "zone": "Feros-Oyuctum",
+   "at": [
+    471,
+    238
+   ]
+  },
+  {
+   "zone": "Fieos-Aiuttum",
+   "at": [
+    278,
+    256
+   ]
+  },
+  {
+   "zone": "Firos-Aiavam",
+   "at": [
+    395,
+    341
+   ]
+  },
+  {
+   "zone": "Firos-Ezatam",
+   "at": [
+    475,
+    266
+   ]
+  },
+  {
+   "zone": "Firos-Osinsum",
+   "at": [
+    494,
+    241
+   ]
+  },
+  {
+   "zone": "Fonitos-Amaurom",
+   "at": [
+    322,
+    250
+   ]
+  },
+  {
+   "zone": "Fonos-Oleraum",
+   "at": [
+    352,
+    216
+   ]
+  },
+  {
+   "zone": "Fonos-Oleraum",
+   "at": [
+    492,
+    257
+   ]
+  },
+  {
+   "zone": "Fouos-Amaurom",
+   "at": [
+    426,
+    296
+   ]
+  },
+  {
+   "zone": "Fuyes-Izohun",
+   "at": [
+    455,
+    296
+   ]
+  },
+  {
+   "zone": "Fynitos-Ezatam",
+   "at": [
+    459,
+    244
+   ]
+  },
+  {
+   "zone": "Hasitos-Avaolum",
+   "at": [
+    326,
+    238
+   ]
+  },
+  {
+   "zone": "Hasos-Osuorom",
+   "at": [
+    494,
+    230
+   ]
+  },
+  {
+   "zone": "Hebitos-Atontum",
+   "at": [
+    331,
+    349
+   ]
+  },
+  {
+   "zone": "Heros-Atoyam",
+   "at": [
+    507,
+    237
+   ]
+  },
+  {
+   "zone": "Horos-Ohenlum",
+   "at": [
+    450,
+    254
+   ]
+  },
+  {
+   "zone": "Hynes-Ieatun",
+   "at": [
+    417,
+    260
+   ]
+  },
+  {
+   "zone": "Hynitos-Ayousum",
+   "at": [
+    471,
+    252
+   ]
+  },
+  {
+   "zone": "Oetos-Ofailos",
+   "at": [
+    439,
+    321
+   ]
+  },
+  {
+   "zone": "Oiritos-Eramtum",
+   "at": [
+    356,
+    349
+   ]
+  },
+  {
+   "zone": "Ouritos-Ofailos",
+   "at": [
+    429,
+    283
+   ]
+  },
+  {
+   "zone": "Peritos-Avosam",
+   "at": [
+    514,
+    386
+   ]
+  },
+  {
+   "zone": "Poues-Unatam",
+   "at": [
+    222,
+    257
+   ]
+  },
+  {
+   "zone": "Pynitos-Aietam",
+   "at": [
+    455,
+    349
+   ]
+  },
+  {
+   "zone": "Pynos-Opabrom",
+   "at": [
+    484,
+    296
+   ]
+  },
+  {
+   "zone": "Qiient-Qi-Nusom",
+   "at": [
+    345,
+    252
+   ]
+  },
+  {
+   "zone": "Quaent-Qintis",
+   "at": [
+    408,
+    369
+   ]
+  },
+  {
+   "zone": "Sasos-Oiozlum",
+   "at": [
+    312,
+    399
+   ]
+  },
+  {
+   "zone": "Sebos-Oyohun",
+   "at": [
+    542,
+    392
+   ]
+  },
+  {
+   "zone": "Seritos-Onaytum",
+   "at": [
+    293,
+    243
+   ]
+  },
+  {
+   "zone": "Souos-Ososlos",
+   "at": [
+    300,
+    412
+   ]
+  },
+  {
+   "zone": "Suyites-Uzurtum",
+   "at": [
+    542,
+    381
+   ]
+  },
+  {
+   "zone": "Synitos-Ofurlos",
+   "at": [
+    547,
+    308
+   ]
+  },
+  {
+   "zone": "Tasos-Iriglos",
+   "at": [
+    219,
+    291
+   ]
+  },
+  {
+   "zone": "Tiros-Odoxlum",
+   "at": [
+    483,
+    409
+   ]
+  },
+  {
+   "zone": "Tiros-Ouultum",
+   "at": [
+    298,
+    310
+   ]
+  },
+  {
+   "zone": "Tonitos-Igurlum",
+   "at": [
+    435,
+    220
+   ]
+  },
+  {
+   "zone": "Toritos-Iriglos",
+   "at": [
+    210,
+    299
+   ]
+  },
+  {
+   "zone": "Tuyitos-Aboysum",
+   "at": [
+    292,
+    248
+   ]
+  },
+  {
+   "zone": "Xiros-Aiairom",
+   "at": [
+    568,
+    329
+   ]
+  }
+ ],
+ "wood": [
+  {
+   "zone": "Casos-Aiagsum",
+   "at": [
+    302,
+    345
+   ]
+  },
+  {
+   "zone": "Casos-Ayosrom",
+   "at": [
+    476,
+    248
+   ]
+  },
+  {
+   "zone": "Cetitos-Avixnum",
+   "at": [
+    263,
+    388
+   ]
+  },
+  {
+   "zone": "Cieitos-Otatrom",
+   "at": [
+    397,
+    419
+   ]
+  },
+  {
+   "zone": "Cieitos-Otatrom",
+   "at": [
+    572,
+    287
+   ]
+  },
+  {
+   "zone": "Cynitos-Aiagsum",
+   "at": [
+    291,
+    339
+   ]
+  },
+  {
+   "zone": "Febites-Opavun",
+   "at": [
+    289,
+    392
+   ]
+  },
+  {
+   "zone": "Hasos-Inayaum",
+   "at": [
+    278,
+    250
+   ]
+  },
+  {
+   "zone": "Hasos-Iuimaum",
+   "at": [
+    461,
+    284
+   ]
+  },
+  {
+   "zone": "Hiles-Izizaum",
+   "at": [
+    412,
+    298
+   ]
+  },
+  {
+   "zone": "Honites-Izizaum",
+   "at": [
+    252,
+    305
+   ]
+  },
+  {
+   "zone": "Horos-Ohenlum",
+   "at": [
+    524,
+    330
+   ]
+  },
+  {
+   "zone": "Hynitos-Ulamsum",
+   "at": [
+    250,
+    379
+   ]
+  },
+  {
+   "zone": "Qiient-Nutis",
+   "at": [
+    294,
+    335
+   ]
+  },
+  {
+   "zone": "Quatun-Odetum",
+   "at": [
+    317,
+    245
+   ]
+  },
+  {
+   "zone": "Sasos-Egeylos",
+   "at": [
+    411,
+    276
+   ]
+  },
+  {
+   "zone": "Seritos-Egeylos",
+   "at": [
+    447,
+    353
+   ]
+  },
+  {
+   "zone": "Setent-Vietis",
+   "at": [
+    333,
+    184
+   ]
+  },
+  {
+   "zone": "Silos-Apenlum",
+   "at": [
+    445,
+    442
+   ]
+  },
+  {
+   "zone": "Souos-Availos",
+   "at": [
+    321,
+    434
+   ]
+  },
+  {
+   "zone": "Touos-Uoemtum",
+   "at": [
+    287,
+    190
+   ]
+  },
+  {
+   "zone": "Xerites-Oxoulum",
+   "at": [
+    365,
+    204
+   ]
+  },
+  {
+   "zone": "Xetitos-Emimsum",
+   "at": [
+    548,
+    327
+   ]
+  },
+  {
+   "zone": "Xiles-Aiavlum",
+   "at": [
+    191,
+    277
+   ]
+  }
+ ]
+}
