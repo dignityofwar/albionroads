@@ -19,8 +19,8 @@ catalogs:
       specifier: ^2.0.5
       version: 2.1.9
     zod:
-      specifier: ^3.23.8
-      version: 3.25.76
+      specifier: ^4.0.0
+      version: 4.6.2
 
 importers:
 
@@ -43,7 +43,7 @@ importers:
         version: link:../web/shared
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.2
     devDependencies:
       '@types/node':
         specifier: 'catalog:'
@@ -192,7 +192,7 @@ importers:
         version: link:../shared
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.2
     devDependencies:
       '@types/bcrypt':
         specifier: ^5.0.2
@@ -229,7 +229,7 @@ importers:
     dependencies:
       zod:
         specifier: 'catalog:'
-        version: 3.25.76
+        version: 4.6.2
     devDependencies:
       typescript:
         specifier: 'catalog:'
@@ -3262,8 +3262,8 @@ packages:
     resolution: {integrity: sha512-CzhO+pFNo8ajLM2d2IW/R93ipy99LWjtwblvC1RsoSUMZgyLbYFr221TnSNT7GjGdYui6P459mw9JH/g/zW2ug==}
     engines: {node: '>=18'}
 
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
+  zod@4.6.2:
+    resolution: {integrity: sha512-lh5RCAGFa1Cm2hjtNwLQhSs/AsqdWnTQaBER9fEwN/88pSh7KOtJavtBx/0VlkN/uFd61SwYmljLMDAsHlvzBQ==}
 
 snapshots:
 
@@ -6189,4 +6189,4 @@ snapshots:
 
   yoctocolors@2.1.2: {}
 
-  zod@3.25.76: {}
+  zod@4.6.2: {}
