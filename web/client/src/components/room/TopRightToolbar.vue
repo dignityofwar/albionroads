@@ -5,6 +5,7 @@ import { Z_INDEX } from '@/constants/Layers';
 defineProps<{
   cores: any[];
   crystals: any[];
+  portals: any[];
   dungeons: any[];
   chests: any[];
 }>();
@@ -20,6 +21,7 @@ const emit = defineEmits<{
     <RoomMapFeaturesToolbar
       :cores="cores"
       :crystals="crystals"
+      :portals="portals"
       :dungeons="dungeons"
       :chests="chests"
       @select="emit('select', $event)"

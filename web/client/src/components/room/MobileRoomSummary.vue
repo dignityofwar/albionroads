@@ -7,6 +7,7 @@ import { Z_INDEX } from '@/constants/Layers';
 type ResourceZone = { zoneId: string; zoneName: string; tier: number; small?: number; large?: number };
 type CoreZone     = { zoneId: string; zoneName: string; coreType: 'green' | 'blue' | 'purple' | 'yellow' };
 type CrystalZone  = { zoneId: string; zoneName: string };
+type PortalZone   = { zoneId: string; zoneName: string };
 type DungeonZone  = { zoneId: string; zoneName: string; type: 'static' | 'group'; count?: number };
 type ChestZone    = { zoneId: string; zoneName: string; type: 'green' | 'blue' | 'yellow' | 'chest'; count?: number };
 
@@ -21,6 +22,7 @@ const props = defineProps<{
   };
   activeCores:     CoreZone[];
   activeCrystals:  CrystalZone[];
+  activePortals:   PortalZone[];
   activeDungeons:  DungeonZone[];
   activeChests:    ChestZone[];
 }>();
@@ -31,12 +33,12 @@ const emit = defineEmits<{
 }>();
 
 const mobileActiveResourceTab = ref<'fibre' | 'leather' | 'ore' | 'stone' | 'wood' | null>(null);
-const mobileActiveFeatureTab  = ref<'cores' | 'crystals' | 'dungeons' | 'chests' | null>(null);
+const mobileActiveFeatureTab  = ref<'cores' | 'crystals' | 'portals' | 'dungeons' | 'chests' | null>(null);
 
 function toggleMobileResourceTab(tab: 'fibre' | 'leather' | 'ore' | 'stone' | 'wood') {
   mobileActiveResourceTab.value = mobileActiveResourceTab.value === tab ? null : tab;
 }
-function toggleMobileFeatureTab(tab: 'cores' | 'crystals' | 'dungeons' | 'chests') {
+function toggleMobileFeatureTab(tab: 'cores' | 'crystals' | 'portals' | 'dungeons' | 'chests') {
   mobileActiveFeatureTab.value = mobileActiveFeatureTab.value === tab ? null : tab;
 }
 
@@ -118,11 +120,11 @@ function navigateTo(zoneId: string) {
           </Transition>
         </div>
 
-        <!-- Features section (cores + crystals/dungeons/chests) -->
+        <!-- Features section (cores + crystals/portals/dungeons/chests) -->
         <div class="frosted-background border border-gray-700/50 rounded-xl p-2 shadow-2xl">
           <p class="text-xs uppercase text-gray-500 font-bold mb-2 px-1">Features</p>
 
-          <!-- All 4 feature buttons in one row -->
+          <!-- All 5 feature buttons in one row -->
           <div class="features-btn-row flex flex-row gap-2 mb-2">
             <!-- Cores button -->
             <button
@@ -156,6 +158,21 @@ function navigateTo(zoneId: string) {
             >
               <img src="/images/crystal.png" class="w-6 h-6 object-contain" alt="Crystal" />
               <span class="text-sm font-bold text-gray-300">{{ activeCrystals.length }}</span>
+            </button>
+            <!-- Brecilien portals button -->
+            <button
+              :disabled="activePortals.length === 0"
+              :class="[
+                'flex-1 flex items-center justify-center gap-1 p-2 rounded-lg border disabled:opacity-40 disabled:cursor-not-allowed transition-colors',
+                mobileActiveFeatureTab === 'portals'
+                  ? 'bg-indigo-600/20 border-indigo-500/50'
+                  : 'bg-gray-700/50 border-gray-600'
+              ]"
+              title="Brecilien Portals"
+              @click="toggleMobileFeatureTab('portals')"
+            >
+              <img src="/images/brecilien-portal.png" class="w-6 h-6 object-contain" alt="Brecilien Portal" />
+              <span class="text-sm font-bold text-gray-300">{{ activePortals.length }}</span>
             </button>
             <!-- Dungeons button -->
             <button
@@ -211,7 +228,7 @@ function navigateTo(zoneId: string) {
             </div>
           </Transition>
 
-          <!-- Zone list for crystals/dungeons/chests -->
+          <!-- Zone list for crystals/portals/dungeons/chests -->
           <Transition name="fade">
             <div v-if="mobileActiveFeatureTab === 'crystals' && activeCrystals.length > 0" class="mt-2 flex flex-col gap-1">
               <button
@@ -221,6 +238,18 @@ function navigateTo(zoneId: string) {
                 class="w-full flex items-center gap-2 px-2.5 py-2 text-sm text-white bg-gray-800/50 hover:bg-gray-700/50 transition-colors text-left rounded border border-gray-700"
               >
                 <img src="/images/crystal.png" class="w-5 h-5 object-contain" alt="Crystal" />
+                <span class="truncate flex-1 font-medium">{{ item.zoneName }}</span>
+                <ChainIdPill :zone-id="item.zoneId" small />
+              </button>
+            </div>
+            <div v-else-if="mobileActiveFeatureTab === 'portals' && activePortals.length > 0" class="mt-2 flex flex-col gap-1">
+              <button
+                v-for="item in activePortals"
+                :key="item.zoneId"
+                @click="navigateTo(item.zoneId)"
+                class="w-full flex items-center gap-2 px-2.5 py-2 text-sm text-white bg-gray-800/50 hover:bg-gray-700/50 transition-colors text-left rounded border border-gray-700"
+              >
+                <img src="/images/brecilien-portal.png" class="w-5 h-5 object-contain" alt="Brecilien Portal" />
                 <span class="truncate flex-1 font-medium">{{ item.zoneName }}</span>
                 <ChainIdPill :zone-id="item.zoneId" small />
               </button>
@@ -268,7 +297,7 @@ function navigateTo(zoneId: string) {
   }
 }
 
-/* Below 600px: cores button goes full-width above the other 3 */
+/* Below 600px: cores button goes full-width above the other 4 */
 @media (max-width: 599px) {
   .features-btn-row {
     flex-wrap: wrap;

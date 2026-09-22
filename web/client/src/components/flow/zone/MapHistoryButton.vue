@@ -100,6 +100,7 @@ function getActiveFeatures(features: NodeFeatures | undefined) {
     { key: 'treasuresBlue',         countKey: 'treasuresBlueCount',   title: 'Blue Treasures',    icon: '/images/treasures-blue.png' },
     { key: 'treasuresYellow',       countKey: 'treasuresYellowCount', title: 'Yellow Treasures',  icon: '/images/treasures-yellow.png' },
     { key: 'crystalCreaturePresent',countKey: null,                   title: 'Crystal Creature',  icon: '/images/crystal.png' },
+    { key: 'brecilienPortalPresent',countKey: null,                   title: 'Brecilien Portal',  icon: '/images/brecilien-portal.png' },
     { key: 'dungeonStatic',         countKey: 'dungeonStaticCount',   title: 'Static Dungeon',    icon: '/images/dungeon-static.png' },
     { key: 'dungeonGroup',          countKey: 'dungeonGroupCount',    title: 'Group Dungeon',     icon: '/images/dungeon-group.png' },
   ];

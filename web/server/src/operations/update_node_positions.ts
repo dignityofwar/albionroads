@@ -138,7 +138,7 @@ export const handleUpdateNodePositions: OperationHandler<Extract<ClientMessage, 
       if (f.dungeonStaticCount !== undefined) result.dungeonStaticCount = f.dungeonStaticCount;
       if (f.dungeonGroupCount !== undefined) result.dungeonGroupCount = f.dungeonGroupCount;
       if (f.upstreamFeatures && f.upstreamFeatures.length > 0) result.upstreamFeatures = f.upstreamFeatures;
-      // crystalCreaturePresent is intentionally excluded (temporary flag)
+      // crystalCreaturePresent and brecilienPortalPresent are intentionally excluded (temporary flags)
       // chest/chestTimer are intentionally excluded (timed chest, not permanent)
       return Object.keys(result).length > 0 ? result : null;
     })();

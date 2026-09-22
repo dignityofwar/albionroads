@@ -41,7 +41,7 @@ Route-plotting state machine (`idle → selectingFrom → selectingTo`). Runs a 
 - **Nodes:** `ZoneNode.vue` draws a diamond with an optional rotated map-shape PNG (`/images/shapes/{mapShape}.png`), feature editors (cores/reds/chests/resources), ping/memory buttons, and the handle editor (`ZoneHandleEditor`). Handles are rendered by `ZoneNodeHandles.vue` from `getDefaultHandles(type, mapShape)` (shared) merged with saved `customHandles`, plus a synthetic `center` and a `center-overlay` snap target while connecting.
 - **Edges:** `ConnectionEdge.vue` uses a custom bezier from `src/utils/connectionPath.ts` (handle facing directions → exit/entry angles). Animated SVG chevrons (scale with distance; static when animations disabled), countdown pill, slots badge (7/20), and an edit/delete popover. Colour from `src/utils/connectionStyle.ts`: green >60 m, orange <60 m, red <30 m, grey expired; plotted-route edges override to blue.
 - **Countdowns:** one 1 s `setInterval` updates a provided `globalNow` ref that all edges/timers consume.
-- **Summaries:** RoomView derives active cores/crystals/dungeons/chests/resources from node features, feeding `TopLeftToolbar`/`TopRightToolbar`/`MobileRoomSummary`.
+- **Summaries:** RoomView derives active cores/crystals/Brecilien portals/dungeons/chests/resources from node features, feeding `TopLeftToolbar`/`TopRightToolbar`/`MobileRoomSummary`.
 
 ## Connection creation
 

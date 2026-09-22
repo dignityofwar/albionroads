@@ -63,6 +63,7 @@ const featuresRequireUpdate = computed(() => {
     (f.resources && f.resources.length > 0) ||
     f.powercoreBlue || f.powercorePurple || f.powercoreGreen || f.powercoreYellow ||
     f.crystalCreaturePresent ||
+    f.brecilienPortalPresent ||
     f.dungeonStatic || f.dungeonGroup ||
     (f.dungeonStaticCount && f.dungeonStaticCount > 0) ||
     (f.dungeonGroupCount && f.dungeonGroupCount > 0) ||
@@ -607,6 +608,7 @@ const activeFeatures = computed(() => {
     { key: 'treasuresBlue',         countKey: 'treasuresBlueCount',   title: 'Blue Treasures',    icon: '/images/treasures-blue.png' },
     { key: 'treasuresYellow',       countKey: 'treasuresYellowCount', title: 'Yellow Treasures',  icon: '/images/treasures-yellow.png' },
     { key: 'crystalCreaturePresent',countKey: null,                   title: 'Crystal Creature',  icon: '/images/crystal.png' },
+    { key: 'brecilienPortalPresent',countKey: null,                   title: 'Brecilien Portal',  icon: '/images/brecilien-portal.png' },
     { key: 'dungeonStatic',         countKey: 'dungeonStaticCount',   title: 'Static Dungeon',    icon: '/images/dungeon-static.png' },
     { key: 'dungeonGroup',          countKey: 'dungeonGroupCount',    title: 'Group Dungeon',     icon: '/images/dungeon-group.png' },
   ];
@@ -695,7 +697,7 @@ const diamondInnerClass = computed(() => {
   return classes;
 });
 
-function toggleFeature(feature: 'powercoreBlue' | 'powercorePurple' | 'powercoreGreen' | 'powercoreYellow' | 'crystalCreaturePresent' | 'dungeonStatic' | 'dungeonGroup') {
+function toggleFeature(feature: 'powercoreBlue' | 'powercorePurple' | 'powercoreGreen' | 'powercoreYellow' | 'crystalCreaturePresent' | 'brecilienPortalPresent' | 'dungeonStatic' | 'dungeonGroup') {
   const currentFeatures = props.data.features || {};
   const features = { ...currentFeatures };
   
