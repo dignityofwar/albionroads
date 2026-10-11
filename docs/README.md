@@ -14,6 +14,7 @@ A collaborative, real-time web application for *Albion Online* guild members to 
 | [data-pipeline.md](data-pipeline.md) | The zone catalogue: `maps.json`, the shared zones adapter, and the map-parser sync tooling |
 | [testing.md](testing.md) | Test strategy per package, helpers/mocks, exact commands |
 | [development.md](development.md) | Local setup, env vars, workspace scripts, Docker build/deploy |
+| [monitoring.md](monitoring.md) | External uptime check, what it watches and why the container healthcheck isn't enough |
 | [proposals/map-feature-confirmation.md](proposals/map-feature-confirmation.md) | **Proposed:** machine-derived map features confirmed by humans, replacing name-inferred shape and chest data |
 
 ## Quick orientation
