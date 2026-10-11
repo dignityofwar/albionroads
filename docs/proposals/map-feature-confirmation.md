@@ -1,6 +1,6 @@
 # Proposal: machine-derived map features, confirmed by humans
 
-**Status:** phase 1 shipped, phase 2 proposed. **Last updated:** 2026-08-01.
+**Status:** phase 1 shipped, phase 2 started. **Last updated:** 2026-08-02.
 
 Today a room's map features are whatever a human typed while standing in the zone, usually under
 time pressure in a lethal area. This proposes inverting that: publish a machine-derived baseline
@@ -43,19 +43,86 @@ The per-zone feature counts — "we believe this zone has 6 green chests and 2 w
 in the catalogue, because they need the icon reader that phase 2 depends on. Phase 1 corrected the
 *identity* of every zone (name, type, shape); it did not add the contextual detail.
 
+## Phase 2 so far: the icon reader (2026-08-02)
+
+`tools/map-analysis/map_icons.py` reads chests, resource nodes and dungeon entrances off a map
+screenshot. It found a frame on all 325 cached maps and read 3,395 icons; two of those maps are
+zoomed far enough that the frame is unusable and they yield nothing.
+
+Agreement with the tabulated reference, **counted only over zones where one side or the other says
+the feature is present**. That restriction matters: only about a third of zones have any given
+resource, so scoring all 325 would count every zone with no ore as an ore success and turn the
+figures below into high nineties across the board.
+
+| feature | agree / present | | feature | agree / present |
+|---|---|---|---|---|
+| ore | 101/105 (96%) | | stone | 111/116 (96%) |
+| leather | 106/113 (94%) | | wood | 114/124 (92%) |
+| green chests | 280/308 (91%) | | fibre | 110/122 (90%) |
+| blue chests | 160/178 (90%) | | yellow chests | 89/101 (88%) |
+| **dungeons** | **114/195 (58%)** | | | |
+
+Dungeons are the outlier and the reason the reader is not yet a baseline anyone should ship.
+
+**These are in-sample figures**, on two counts. Seven per-type thresholds were swept against this
+same reference, and the exemplars the templates are averaged from are crops out of these same
+screenshots.
+
+The threshold half of that was checked: tune on alternate zones, score the other half, then swap.
+Scoring half B with thresholds tuned on B gives 82.3% against 80.6% with thresholds tuned on A;
+scoring half A gives 87.2% against 87.5% the other way. So fitting the thresholds to the zones
+they are then scored on is worth about **0.7 points on average** — the two halves differ far more
+from each other (80.6 vs 87.5) than either differs from its own tuning. The thresholds themselves
+land in near-identical places on both halves. They are not carrying the result.
+
+The template overlap is not controlled for at all: 229 of the 325 zones contributed exemplar crops.
+So treat the table as "the reader and the reference mostly say the same thing", not as an accuracy
+measurement against truth.
+
+Four things it established that the plan did not know:
+
+- **The small/large resource split is readable after all,** and it is the clearing the node stands
+  in, not the sprite. Normalised against each map's own terrain coverage the two populations
+  separate cleanly. On 74 zone/resource pairs where two or more independent rooms agreed a non-zero
+  split, the reader gets both numbers right on 68 — and **every failure is a count disagreement,
+  never a sizing one: where the count is right the split is right 68 times out of 68.** So the
+  confirmation schema's per-line small/large numbers have a machine baseline rather than only a
+  human one, and its weak point is counting rather than sizing.
+- **Correlation alone cannot tell the three chests apart.** They share one sprite body and differ
+  only in lid colour, which normalised cross-correlation removes along with the mean. Matching the
+  shape once and taking the colour from lid hue — gold 42°, green 88°, blue 190°, tightly clustered
+  and far apart — took blue chests from 32 read to 194 and yellow from 6 to 176. A lid too washed
+  out to take a hue from is counted as green and the zone is flagged, since silently guessing would
+  bias green upward against the other two; across 1,486 chests that has not yet happened once.
+- **The reference and the images disagree about dungeons, in the reference's favour by 69.** It is
+  not a threshold problem — the count is flat from 0.60 to 0.85. Whether that is a second dungeon
+  sprite the reader has no template for, or the reference over-reporting, is not settled: the one
+  case checked by eye, `Casos-Aximam`, is tabulated at 2 and its map draws 1. It needs settling
+  before dungeons go into a baseline, and it is the largest single block of the review queue.
+- **Both known under-counts were occlusion, not detection.** `Huritos-Oiaelos` has a hover tooltip
+  drawn over the map hiding icons; `Tebitos-Odoxlum` is zoomed far enough that the frame runs off
+  the screenshot. Both are flagged now — a straight horizontal edge longer than 70 reference pixels
+  is a UI panel, which terrain does not produce at that length in this corpus.
+
+The reader stays out of the build, like the rest of `tools/map-analysis`. Templates are averaged
+from labelled exemplar coordinates in `icon-labels.json` rather than committed sprite images, the
+same arrangement `road_shapes.py` uses for its shape baselines. The screenshots, the tabulated
+reference and the results are all uncommitted, so none of the figures above can be reproduced from
+this repository alone — the reviewed dataset is what fixes that, and it is the next task.
+
 ## Tasks
 
 Phase 2, in rough dependency order.
 
-- Build the icon reader: locate the play area, mask overlay noise, identify each icon type, cluster
-  icons into sites, classify each resource site as small or large from the clearing around it.
-- Filter overlay noise from icon detection: the toolbar legend outside the play area, player dots
-  and glow-backed icons, the hunt-tracking ring, red/black rings, the Brecilien portal icon, and
-  power-core icons.
-- Investigate the two under-counts (`Huritos-Oiaelos`, `Tebitos-Odoxlum`) — a missed icon is a
-  different failure from an over-count and must be understood before the baseline is trusted.
-- Produce the reviewed per-zone reference dataset and commit it; keep acquisition tooling and
-  cached images out of the repo.
+- Settle the dungeon disagreement — 69 dungeons the reference has and the images do not. Establish
+  whether a second dungeon sprite exists that the reader has no template for, or the reference
+  over-reports. Blocks putting dungeons in the baseline at all.
+- Review the 136 flagged zones and produce the reviewed per-zone reference dataset, then commit it;
+  keep acquisition tooling and cached images out of the repo. The reader's own output is not the
+  dataset — every zone where it disagrees with the tabulated reference needs a human to say which
+  of the two is right, and the dungeon disagreements are the bulk of them.
+- Decide what the baseline says for the 2 zones the reader cannot read at all and the 21 that have
+  no data of any kind.
 - Add feature counts to `GameMap`, `GameMapSchema`, the `Zone` interface and the shared adapter —
   all four, since the adapter currently drops everything the runtime does not already use.
 - Re-run the human-history audit without collapsing `dungeonStatic`/`dungeonGroup` into one count
@@ -82,6 +149,8 @@ Phase 2, in rough dependency order.
 - Research how Avalonian and group dungeons spawn specifically in Roads zones.
 
 Done in phase 1: ~~resolve the shape disagreements~~, ~~decide the `maps.json` drift question~~.
+Done in phase 2: ~~build the icon reader~~, ~~filter overlay noise from icon detection~~,
+~~investigate the two under-counts~~.
 
 ## Why
 
@@ -317,9 +386,14 @@ correction to the catalogue.
   baseline — only corroborated corrections do. *Optional, not agreed:* withhold the prefill on a
   small random fraction of zone loads to measure blind-vs-prefilled disagreement rather than
   assuming it is small.
-- **Icon detection is unproven** beyond a colour-matching spike (91% on green chests, all errors
-  over-counts from visually similar icons). This is the step most likely to go wrong.
-- **21 zones have no data of any kind** and stay blind-entry.
+- **Icon detection is no longer unproven, but it is not yet proven either.** It is measured on the
+  same corpus its templates were learned from and against a reference that is itself wrong in
+  places, so the phase 2 figures are agreement rather than accuracy. Dungeons at 58% are the part
+  that is actually failing. Two smaller ones: the reader is only as reproducible as the screenshots
+  it learned from — the exemplar coordinates in `icon-labels.json` point into specific cached
+  images — and transient icons other than portals and the hideout marker have no template, so they
+  are rejected on score alone rather than recognised and set aside.
+- **21 zones have no data of any kind** and stay blind-entry, plus 3 the reader cannot locate.
 - **Acquisition is not reproducible in CI** by design — the reviewed reference dataset is committed,
   the tooling and cached images are not.
 - Socket counts are currently written to `maps.json` but **read by nothing at runtime**; the shared

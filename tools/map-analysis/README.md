@@ -1,7 +1,7 @@
 # Map analysis tools
 
-Two throwaway-but-kept Python scripts for checking zone data against evidence
-rather than assumption. Neither is part of the build; run them by hand when a
+Three throwaway-but-kept Python scripts for checking zone data against evidence
+rather than assumption. None is part of the build; run them by hand when a
 question comes up.
 
 Requires `numpy` and `pillow`.
@@ -25,8 +25,45 @@ Output per zone: shape, rotation in 90° clockwise steps, a 0–1 match score, t
 runner-up shape, and a `needsReview` note when the match is weak, a close call, or
 disagrees with the supplied label.
 
-Known limitation: it identifies the road network only. Resource sockets, chests
-and dungeon markers are not read.
+Known limitation: it identifies the road network only. For the icons on top of
+it, see `map_icons.py`.
+
+## `map_icons.py` — chests, resources and dungeons from a screenshot
+
+Finds the permanent feature sprites on a map and names them, giving the per-zone
+counts the confirmation model needs as its baseline. A sprite has to survive road
+masking as a bright connected component to be considered at all, so anything
+covered by a UI panel or drawn over a road can be missed outright.
+
+```bash
+python3 map_icons.py --maps ./screenshots --labels ./icon-labels.json \
+                     --reference ./reference.json
+```
+
+`icon-labels.json` holds exemplar coordinates per feature type; templates are
+averaged from those rather than hardcoded, the same arrangement `road_shapes.py`
+uses for its shape baselines. The coordinates point into the screenshots, so
+re-acquiring the images can invalidate them — check a handful by eye if the
+counts move.
+
+`--reference` is optional. Supplying it prints a per-type agreement table and
+adds every disagreement to that zone's review notes. Agreement is counted only
+over zones where one side or the other says the feature is present — scoring all
+325 would count every zone that has no ore as an ore success, and most of them
+have none.
+
+Output per zone: the feature summary (`chests`, `resources` with a small/large
+split, `dungeonCount`), every icon with its position and match score, and a
+`needsReview` list. Zones are flagged when the frame was found but failed its
+quality check, when a UI panel covers part of the map, when a chest's lid was too
+washed out to take a colour from, or when an icon matched two types too closely
+to call. A map whose frame cannot be found at all is skipped with no entry, so
+check the skipped count as well as the flags.
+
+Portals and the hideout marker have templates purely so they stop being mistaken
+for features. Everything else that is not baseline-able — power cores, the
+crystal creature, the player arrow, the hunt ring — has no template and is
+rejected on score alone, which is the weaker of the two mechanisms.
 
 ## `feature_audit.py` — human map history vs a reference set
 
