@@ -784,6 +784,13 @@ const activeCrystals = computed(() => {
     .sort((a, b) => a.zoneName.localeCompare(b.zoneName));
 });
 
+const activePortals = computed(() => {
+  return flowNodes.value
+    .filter(node => node.data.features?.brecilienPortalPresent)
+    .map(node => ({ zoneId: node.id, zoneName: node.data.zoneName }))
+    .sort((a, b) => a.zoneName.localeCompare(b.zoneName));
+});
+
 const activeDungeons = computed(() => {
   const dungeons: { zoneId: string; zoneName: string; type: 'static' | 'group'; count?: number }[] = [];
   flowNodes.value.forEach(node => {
@@ -841,8 +848,9 @@ const activeResources = computed(() => {
 
 const hasAnySummaryItems = computed(() => {
   return activeCores.value.length > 0 || 
-         activeCrystals.value.length > 0 || 
-         activeDungeons.value.length > 0 || 
+         activeCrystals.value.length > 0 ||
+         activePortals.value.length > 0 ||
+         activeDungeons.value.length > 0 ||
          activeChests.value.length > 0;
 });
 
@@ -1593,6 +1601,7 @@ defineExpose({ flowNodes, onNodeDragStop, showToast, handleConnect, showConfirma
       <TopRightToolbar
         :cores="activeCores"
         :crystals="activeCrystals"
+        :portals="activePortals"
         :dungeons="activeDungeons"
         :chests="activeChests"
         @select="goToNode"
@@ -1615,6 +1624,7 @@ defineExpose({ flowNodes, onNodeDragStop, showToast, handleConnect, showConfirma
       :active-resources="activeResources"
       :active-cores="activeCores"
       :active-crystals="activeCrystals"
+      :active-portals="activePortals"
       :active-dungeons="activeDungeons"
       :active-chests="activeChests"
       @close="showMobileSummary = false"

@@ -38,6 +38,12 @@ const DUNGEONS = [
   { type: 'dungeonGroup',  title: 'Group',  icon: '/images/dungeon-group.png' },
 ];
 
+// Boolean toggles — no count, and never written to room memory (transient state)
+const TOGGLES = [
+  { type: 'crystalCreaturePresent', title: 'Crystal Creature', icon: '/images/crystal.png' },
+  { type: 'brecilienPortalPresent', title: 'Brecilien Portal', icon: '/images/brecilien-portal.png' },
+] as const;
+
 // --- Draft input state ---
 // Tracks which inputs are currently focused so prop changes don't overwrite them
 const focusedInputs = ref<Set<string>>(new Set());
@@ -297,16 +303,20 @@ watch(() => props.isOpen, (open) => {
             </div>
           </div>
           <!-- Toggle-only features -->
-          <div class="feature-item flex flex-col items-center gap-1 self-center">
+          <div
+            v-for="t in TOGGLES"
+            :key="t.type"
+            class="feature-item flex flex-col items-center gap-1 self-center"
+          >
             <button
-              @click.stop="emit('toggle', 'crystalCreaturePresent')"
+              @click.stop="emit('toggle', t.type)"
               class="zone-button w-8 h-8 flex items-center justify-center rounded p-0.5"
-              :class="[hasReds ? 'zone-button-reds' : '', features?.crystalCreaturePresent ? 'ring-1 ring-white bg-gray-500' : 'opacity-60']"
-              title="Crystal Creature"
+              :class="[hasReds ? 'zone-button-reds' : '', features?.[t.type] ? 'ring-1 ring-white bg-gray-500' : 'opacity-60']"
+              :title="t.title"
             >
-              <img src="/images/crystal.png" alt="Crystal Creature" class="w-full h-full object-cover" />
+              <img :src="t.icon" :alt="t.title" class="w-full h-full object-cover" />
             </button>
-            <span class="col-label my-0.5" style="font-size: 8px">Crystal Creature</span>
+            <span class="col-label my-0.5" style="font-size: 8px">{{ t.title }}</span>
           </div>
         </div>
       </div>

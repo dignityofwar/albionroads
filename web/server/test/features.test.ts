@@ -143,7 +143,7 @@ describe('Node features persistence', () => {
     socket.close();
   });
 
-  it('saves avalonian treasures to memory but excludes crystalCreaturePresent and timed chest', async () => {
+  it('saves avalonian treasures to memory but excludes the transient flags and timed chest', async () => {
     const { app, mockDb, token } = testApp;
     await app!.listen({ port: 0 });
 
@@ -168,6 +168,7 @@ describe('Node features persistence', () => {
           treasuresGreenCount: 3,
           treasuresBlueCount: 1,
           crystalCreaturePresent: true, // should NOT be saved to memory
+          brecilienPortalPresent: true, // should NOT be saved to memory
           chest: true,                  // should NOT be saved to memory (timed)
           chestTimer: 9999999,          // should NOT be saved to memory (timed)
         }
@@ -192,7 +193,7 @@ describe('Node features persistence', () => {
     socket.send(JSON.stringify({ type: 'update_node_positions', nodePositions }));
     await new Promise((r) => setTimeout(r, 150));
 
-    // Verify memory update includes treasures but NOT crystalCreaturePresent or chest/chestTimer
+    // Verify memory update includes treasures but NOT the transient flags or chest/chestTimer
     // The 7th call should be the UPDATE room_node_memory with only treasure fields
     const updateCall = mockDb.query.mock.calls.find(
       (call: any[]) => typeof call[0] === 'string' && call[0].includes('room_node_memory') && call[0].includes('UPDATE')
@@ -201,6 +202,7 @@ describe('Node features persistence', () => {
     const savedFeatures = JSON.parse(updateCall[1][2]);
     expect(savedFeatures).toEqual({ treasuresGreenCount: 3, treasuresBlueCount: 1 });
     expect(savedFeatures).not.toHaveProperty('crystalCreaturePresent');
+    expect(savedFeatures).not.toHaveProperty('brecilienPortalPresent');
     expect(savedFeatures).not.toHaveProperty('chest');
     expect(savedFeatures).not.toHaveProperty('chestTimer');
 

@@ -22,6 +22,7 @@ const isResource = computed(() => props.type.startsWith('resource'));
 const getImageSrc = (type: string) => {
   switch (type) {
     case 'crystalCreaturePresent': return '/images/crystal.png';
+    case 'brecilienPortalPresent': return '/images/brecilien-portal.png';
     case 'dungeonStatic': return '/images/dungeon-static.png';
     case 'dungeonGroup': return '/images/dungeon-group.png';
     case 'chest': return '/images/chest.png';

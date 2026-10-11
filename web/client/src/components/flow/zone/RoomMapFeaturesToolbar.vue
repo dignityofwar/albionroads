@@ -18,6 +18,7 @@ interface ActiveCore extends ZoneFeatureInfo {
 const props = withDefaults(defineProps<{
   cores: ActiveCore[];
   crystals: ZoneFeatureInfo[];
+  portals: ZoneFeatureInfo[];
   dungeons: ZoneFeatureInfo[];
   chests: ZoneFeatureInfo[];
   alwaysExpanded?: boolean;
@@ -29,7 +30,7 @@ const emit = defineEmits<{
   (e: 'select', zoneId: string): void;
 }>();
 
-type ViewType = 'cores' | 'crystals' | 'dungeons' | 'chests';
+type ViewType = 'cores' | 'crystals' | 'portals' | 'dungeons' | 'chests';
 const STORAGE_KEY = 'mapFeaturesTray_closed';
 
 const userClosedCores = ref(false);
@@ -83,6 +84,7 @@ watch(() => props.cores.length, (newCount, oldCount) => {
 const flash = ref<Record<string, number>>({
   cores: 0,
   crystals: 0,
+  portals: 0,
   dungeons: 0,
   chests: 0,
 });
@@ -93,6 +95,7 @@ function triggerFlash(key: string) {
 
 watch(() => props.cores.length,    (n, o) => { if (o !== undefined && n !== o) triggerFlash('cores'); });
 watch(() => props.crystals.length, (n, o) => { if (o !== undefined && n !== o) triggerFlash('crystals'); });
+watch(() => props.portals.length,  (n, o) => { if (o !== undefined && n !== o) triggerFlash('portals'); });
 watch(() => props.dungeons.length, (n, o) => { if (o !== undefined && n !== o) triggerFlash('dungeons'); });
 watch(() => props.chests.length,   (n, o) => { if (o !== undefined && n !== o) triggerFlash('chests'); });
 
@@ -106,6 +109,7 @@ const totalCount = computed(() => {
   return {
     cores: props.cores.length,
     crystals: props.crystals.length,
+    portals: props.portals.length,
     dungeons: props.dungeons.length,
     chests: props.chests.length,
   };
@@ -118,6 +122,7 @@ function hasItems(view: ViewType | null): view is ViewType {
 const currentList = computed(() => {
   switch (activeView.value) {
     case 'crystals': return props.crystals;
+    case 'portals': return props.portals;
     case 'dungeons': return props.dungeons;
     case 'chests': return props.chests;
     default: return [];
@@ -127,12 +132,14 @@ const currentList = computed(() => {
 const viewTitles: Record<ViewType, string> = {
   cores: 'Active Cores',
   crystals: 'Crystals',
+  portals: 'Brecilien Portals',
   dungeons: 'Dungeons',
   chests: 'Treasures',
 };
 
 function getItemIcon(item: ZoneFeatureInfo) {
   if (activeView.value === 'crystals') return '/images/crystal.png';
+  if (activeView.value === 'portals') return '/images/brecilien-portal.png';
   if (activeView.value === 'dungeons') {
     return item.type === 'static' ? '/images/dungeon-static.png' : '/images/dungeon-group.png';
   }
@@ -214,8 +221,25 @@ function handleSelect(zoneId: string) {
               <span class="text-lg font-bold text-gray-300 min-w-[12px] text-center">{{ totalCount.crystals }}</span>
             </button>
 
+            <!-- Brecilien Portals Button -->
+            <button
+              @click="toggleView('portals')"
+              :disabled="totalCount.portals === 0"
+              :class="[
+                alwaysExpanded ? 'flex-none' : 'flex-1 md:flex-none',
+                'flex items-center justify-center gap-2 rounded-lg transition-all duration-200 border disabled:opacity-40 disabled:cursor-not-allowed overflow-hidden btn-flash-wrap',
+                activeView === 'portals' ? 'bg-indigo-600/20 border-indigo-500/50 hover:bg-indigo-600/30 hover:border-indigo-400/60' : (totalCount.portals > 0 ? 'bg-gray-700/50 border-gray-600 hover:bg-gray-600/60 hover:border-gray-500' : 'bg-gray-800/50 border-transparent'),
+                userExpanded ? 'px-4 py-2' : 'p-2',
+              ]"
+              title="Brecilien Portals"
+            >
+              <span v-if="flash.portals > 0" :key="flash.portals" class="btn-flash-overlay" />
+              <img src="/images/brecilien-portal.png" class="w-6 h-6 object-contain" alt="Brecilien Portal" />
+              <span class="text-lg font-bold text-gray-300 min-w-[12px] text-center">{{ totalCount.portals }}</span>
+            </button>
+
             <!-- Dungeons Button -->
-            <button 
+            <button
               @click="toggleView('dungeons')"
               :disabled="totalCount.dungeons === 0"
               :class="[
