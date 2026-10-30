@@ -33,7 +33,7 @@ jobs:
       # Matches the version the deploy image builds on (provisioning/Dockerfile).
       - uses: actions/setup-node@v6
         with:
-          node-version: 24.19.0
+          node-version: 24.22.0
           cache: pnpm
 
       - run: pnpm install --frozen-lockfile

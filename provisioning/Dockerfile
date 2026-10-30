@@ -1,5 +1,5 @@
 # Stage 1: Build
-FROM node:24.18.1 AS builder
+FROM node:24.21.0 AS builder
 ENV CI=true
 RUN corepack enable && corepack prepare pnpm@latest --activate
 WORKDIR /app
@@ -9,7 +9,7 @@ RUN pnpm --filter shared build
 RUN pnpm --filter server build
 
 # Stage 2: Production
-FROM node:24.18.1-slim
+FROM node:24.21.0-slim
 ENV CI=true
 RUN corepack enable && corepack prepare pnpm@latest --activate
 WORKDIR /app
