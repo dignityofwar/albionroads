@@ -10,7 +10,7 @@ catalog:
   tsx: ^4.19.1
   typescript: ^5.5.3
   vitest: ^2.0.5
-  zod: ^3.23.8
+  zod: ^4.0.0
 
 allowBuilds:
   '@parcel/watcher': true
