@@ -28,7 +28,7 @@ jobs:
 
       - uses: pnpm/action-setup@v6
         with:
-          version: 11
+          version: 12
 
       # Matches the version the deploy image builds on (provisioning/Dockerfile).
       - uses: actions/setup-node@v6
